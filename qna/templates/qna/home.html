@@ -1,0 +1,20 @@
+{% extends "qna/base.html" %}
+
+{% block content %}
+    <h1>Questions</h1>
+    {% for question in questions %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{% url 'question-detail' question.pk %}">{{ question.title }}</a>
+                </h5>
+                <p class="card-text">{{ question.content|truncatechars:200 }}</p>
+                <small class="text-muted">
+                    Asked by {{ question.author.username }} on {{ question.created_at|date:"F d, Y" }}
+                </small>
+            </div>
+        </div>
+    {% empty %}
+        <p>No questions yet.</p>
+    {% endfor %}
+{% endblock %}
