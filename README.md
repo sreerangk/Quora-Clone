@@ -47,6 +47,7 @@ A Django-based question and answer platform inspired by Quora, implementing core
     -source venv/bin/activate
     
 3.Install dependencies:
+
   - pip install -r requirements.txt
 
 4.Run migrations:
@@ -57,3 +58,13 @@ A Django-based question and answer platform inspired by Quora, implementing core
 
 6.Run development server:
   -python manage.py runserver
+
+![image](https://github.com/user-attachments/assets/4617391a-e8e5-492b-8c5a-f71c4b5376d3)
+
+Home page showing list of questions
+
+![image](https://github.com/user-attachments/assets/84a807eb-4590-456f-a88f-a0a3ad8f1d45)
+
+Question detail page with answers and like functionality
+
+
