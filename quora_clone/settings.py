@@ -73,6 +73,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'quora_clone.wsgi.application'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = 'login'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
