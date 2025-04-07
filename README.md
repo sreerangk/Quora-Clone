@@ -49,11 +49,11 @@ A Django-based question and answer platform inspired by Quora, implementing core
 3.Install dependencies:
   - pip install -r requirements.txt
 
-4. Run migrations:
+4.Run migrations:
    -python manage.py migrate
 
 5.Create superuser (admin):
   - python manage.py createsuperuser
-    
-6. Run development server:
+
+6.Run development server:
   -python manage.py runserver
